@@ -1,0 +1,19 @@
+!!!
+%html
+	%head
+		%title Rainforest
+		= stylesheet_link_tag	'application', media: 'all', 'data-turbolinks-track' => true
+		= javascript_include_tag	'application'
+		= csrf_meta_tags
+	%body
+		.row-fluid
+			.span10.offset1
+				.hero-unit.text-center
+					%h1
+						Rainforest
+					%p
+						by Fire Breathing Rubber Duckies
+					= link_to 'New Product', new_product_path, class: 'btn btn-rainforest'
+		%br
+		%br
+		= yield
