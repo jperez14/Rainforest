@@ -13,6 +13,16 @@
 
 ActiveRecord::Schema.define(version: 20140611183415) do
 
+  create_table "images", force: true do |t|
+    t.string   "title"
+    t.string   "url"
+    t.integer  "product_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "images", ["product_id"], name: "index_images_on_product_id"
+
   create_table "products", force: true do |t|
     t.string   "name"
     t.text     "description"
