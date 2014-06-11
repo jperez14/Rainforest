@@ -13,3 +13,10 @@
  *= require_tree .
  *= require_self
  */
+
+@import 'bootstrap';
+
+.btn-rainforest{
+	@extend .btn-sucess;
+	color: white;
+}
