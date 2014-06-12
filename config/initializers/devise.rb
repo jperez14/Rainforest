@@ -4,7 +4,7 @@ Devise.setup do |config|
   # The secret key used by Devise. Devise uses this key to generate
   # random tokens. Changing this key will render invalid all existing
   # confirmation, reset password and unlock tokens in the database.
-  # config.secret_key = 'd78aec64b04cb681ba040a4e768778cf9407cbd9eadae37e6bded5cd4732571576613c0c590f9cd5dca51eeee9b404ce0a123a1276b9be22c5ea761acc4cb966'
+  # config.secret_key = 'ab3caa2606878df4e2c978692d8dff553d2707f4abecea41f5142a6fea2da7ca449bf5e8d6fe91ed9f79d30dd0d6070ab30a31fc835c5afb1f13a7d12f6009ea'
 
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
@@ -97,7 +97,7 @@ Devise.setup do |config|
   config.stretches = Rails.env.test? ? 1 : 10
 
   # Setup a pepper to generate the encrypted password.
-  # config.pepper = '1fcda3e17d05b6fef70cc26a81d8de3fb56e1be0dd3786a6d1abe192b67817f06c43c1b68c6215d749a68b89d743a503d1600eb1db0877b5561b2a656d2aca57'
+  # config.pepper = 'cd4bba71f35825354e5d430025b2da5e1a62ac20320732167780282184d4edebb5aec3d188e8b7e39a3e44f7eac735723ac34e06878542e2b999676909834ea5'
 
   # ==> Configuration for :confirmable
   # A period that the user is allowed to access the website even without
@@ -119,7 +119,7 @@ Devise.setup do |config|
   # initial account confirmation) to be applied. Requires additional unconfirmed_email
   # db field (see migrations). Until confirmed, new email is stored in
   # unconfirmed_email column, and copied to email column on successful confirmation.
-  config.reconfirmable = true
+  # config.reconfirmable = true
 
   # Defines which key will be used when confirming an account
   # config.confirmation_keys = [ :email ]

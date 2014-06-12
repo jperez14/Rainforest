@@ -19,12 +19,14 @@ class ReviewsController < ApplicationController
 
   # GET /reviews/1/edit
   def edit
+    @review = Review.find(params[:id])
   end
 
   # POST /reviews
   # POST /reviews.json
   def create
     @review = Review.new(review_params)
+    @review.user = current_user
 
     respond_to do |format|
       if @review.save
@@ -54,7 +56,10 @@ class ReviewsController < ApplicationController
   # DELETE /reviews/1
   # DELETE /reviews/1.json
   def destroy
+    @review = Review.find(params[:id])
+    authorize! :destroy, @review
     @review.destroy
+    @reviews = Review.accessible_by(current_ability)
     respond_to do |format|
       format.html { redirect_to reviews_url, notice: 'Review was successfully destroyed.' }
       format.json { head :no_content }
