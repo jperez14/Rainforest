@@ -30,3 +30,9 @@
 	color: white;
 }
 
+a.logoutcolor {
+	color: white;
+	&:hover {
+		background-color: green;
+	}
+}
