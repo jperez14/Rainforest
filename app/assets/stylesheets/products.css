@@ -37,3 +37,12 @@
   font-variant: bold;
   font-size: 50px;
 }
+
+body {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+a {
+  color: black;
+}
