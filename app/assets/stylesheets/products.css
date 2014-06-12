@@ -2,6 +2,19 @@
   Place all the styles related to the matching controller here.
   They will automatically be included in application.css.
 */
+#pins {
+  margin: 0 auto;
+}
+
+.box {
+  margin: 5px;
+  width: 214px;
+}
+
+.box img {
+  width: 100%;
+}
+
 #overlay {
      visibility: hidden;
      position: absolute;

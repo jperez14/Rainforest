@@ -50,3 +50,6 @@ group :development do
 	gem 'better_errors'
 	gem 'binding_of_caller'
 end
+
+gem 'jquery-turbolinks'
+gem 'masonry-rails', '~> 0.2.0'
