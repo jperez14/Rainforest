@@ -13,6 +13,10 @@
 						Rainforest
 					%p
 						by Fire Breathing Rubber Duckies
+					.text-center
+						%strong= current_user.email
+					.text-center
+						= link_to 'logout', destroy_user_session_path, method: :delete
 					%a.btn{"data-toggle" => "modal", :href => "#newProductModal"} Create Product
 		#newProductModal.modal.hide.fade{"tabindex" => "-1", "role" => "dialog", "aria-labelledby" => "myLargeModalLabel", "aria-hidden" => "true"}
 			.modal-header
