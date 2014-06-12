@@ -17,6 +17,7 @@
 
 @import 'bootstrap';
 
+
 .btn-rainforest{
 	@extend .btn-sucess;
 	color: white;
@@ -25,4 +26,6 @@
 .hero-unit.text-center {
 	font-stretch: expanded;
 	font-variant: small-caps;
+	background-color: green;
+	color: white;
 }
