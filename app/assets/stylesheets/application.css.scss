@@ -12,11 +12,18 @@
  *
  *= require_tree .
  *= require_self
+ *= require 'masonry/transitions'
  */
 
 @import 'bootstrap';
 
 .btn-rainforest{
-	@extend .btn-success;
-	color: green;
+	@extend .btn-sucess;
+	color: white;
 }
+
+.hero-unit.text-center {
+	font-stretch: expanded;
+	font-variant: small-caps;
+}
+

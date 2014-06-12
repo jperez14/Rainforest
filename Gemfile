@@ -47,3 +47,12 @@ gem 'simple_form'
 gem 'devise'
 gem 'cancan'
 
+group :development do
+	gem 'better_errors'
+	gem 'binding_of_caller'
+end
+
+gem 'jquery-turbolinks'
+gem 'masonry-rails', '~> 0.2.0'
+gem 'will_paginate', '~> 3.0.5'
+gem 'will_paginate-bootstrap'
