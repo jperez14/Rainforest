@@ -17,29 +17,42 @@
 
 @import 'bootstrap';
 
-
 .btn-rainforest {
-  @extend .btn-sucess;
+  @extend .btn-success;
   color: rgb(158, 152, 145);
 }
 
 .hero-unit.text-center {
-  font-stretch: expanded;
-  font-variant: normal;
-  background-color: #60c449;
-  font-family: courier;
-  color: white;
+	font-stretch: expanded;
+	font-variant: normal;
+	background-color: #60c449;
+	font-family: courier;
+	color: white;
 }
 
 a.logoutcolor {
   color: white;
-  &:hover {
+
+  &:hover {
     background-color: green;
-  }
+  }
 }
 
 .row-fluid {
+  color: white;
+  background-color: #10ACB7;
+}
 
-color: white;
-background-color: #10ACB7;
+body {
+  background-color: #10ACB7;	
+}
+
+.panel-body {
+	padding: 10px;
+}
+
+.box img {
+	border-style: solid;
+	border-width: 3px;
+	border-color: #cccccc;
 }
