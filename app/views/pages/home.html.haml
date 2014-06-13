@@ -5,7 +5,9 @@
 	#pins.transitions-enabled
 		- @products.each do |product|
 			.box.panel.panel-default
-				= image_tag product.photo.url(:thumb)
+				= image_tag product.photo.url("100x100>")
+				%br
+				%br
 				.panel-body
 					%strong
 						%p= product.name
